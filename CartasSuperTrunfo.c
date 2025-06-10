@@ -1,51 +1,86 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+   int main(){
 
-int main() {
- 
-    char estado;
-    int codigo;
-    char nome[50];
-    int populacao;
-    float area, pib;
-    int pontosTuristicos;
-    float area em km;
+    char estado[50];
+    char cidade[50];
+    char codigo[50];
+    int população;
+    int pontosturisticos;
+    float pib;
+    float area;
+    float densidadepopulacional;
+    float pibpercapital;
 
-    printf("Digite o nome do estado");
+    printf("digite seu estado: \n");
     scanf("%s", &estado);
 
-    printf("Digite o código da cidade: ");
-    scanf("%d", &codigodacidade);
+    printf("nome da cidade: \n");
+    scanf("%s", &cidade);
 
-    printf("Digite o nome da cidade:");
-    scanf(" %s", &cidade);
+    printf("codigo: \n");
+    scanf("%S", &codigo);
 
-    printf("Digite a população: ");
-    scanf("%d", &populacao);
+    printf("população: \n");
+    scanf("%d", &população);
 
-    printf("Digite a área da cidade (em km²): ");
-    scanf("%f", &area);
+    printf("pontosturisticos: \n");
+    scanf("%d", &pontosturisticos);
 
-    printf("Digite o PIB da cidade (em milhões): ");
+    printf("pib: \n");
     scanf("%f", &pib);
 
-    printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &pontosTuristicos);
+    printf("area km²: \n");
+    scanf("%f", &area);
 
-    
-    printf("estado: %s\n", estado);
-    printf("Código: %d\n", codigo);
-    printf("Nome: %s\n", nome);
-    printf("População: %d\n", populacao);
-    printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f milhões\n", pib);
-    printf("Pontos Turísticos: %d\n", pontosTuristicos);
+    (população/ area);
+    (pib / população);
+
+    printf("carta 1! \n");
+    printf("estado: %s \n", estado);
+    printf("cidade: %s \n", cidade);
+    printf("codigo: %s \n", codigo);
+    printf("populaçao: %d \n", população);
+    printf("pontos turisticos: %d \n", pontosturisticos);
+    printf("pib: %f \n", pib);
+    printf("area km²: %f \n", area);
+    printf("densidade populacional km²: %f \n", população / area);
+    printf("pib per capital: %f \n", pib / população);
+
+    printf("digite seu estado: \n");
+    scanf("%s", &estado);
+
+    printf("nome da cidade: \n");
+    scanf("%s", &cidade);
+
+    printf("codigo: \n");
+    scanf("%S", &codigo);
+
+    printf("população: \n");
+    scanf("%d", &população);
+
+    printf("pontosturisticos: \n");
+    scanf("%d", &pontosturisticos);
+
+    printf("pib: \n");
+    scanf("%f", &pib);
+
+    printf("area km²: \n");
+    scanf("%f", &area);
+
+
+    printf("carta 2! \n");
+    printf("estado: %s \n", estado);
+    printf("cidade: %s \n", cidade);
+    printf("codigo: %s \n", codigo);
+    printf("populaçao: %d \n", população);
+    printf("pontos turisticos: %d \n", pontosturisticos);
+    printf("pib: %f \n", pib);
+    printf("area km²: %f \n", area);
+    printf("densidade populacional km²: %f\n", população / area);
+    printf("pib per capital: %f \n", pib / população);
+
 
     return 0;
+
 }
-  printf("novocomit\n");
