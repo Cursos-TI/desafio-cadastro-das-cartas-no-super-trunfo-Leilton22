@@ -11,6 +11,7 @@
     float area;
     float densidadepopulacional;
     float pibpercapital;
+    float SuperPoder;
 
     printf("digite seu estado: \n");
     scanf("%s", &estado);
@@ -46,6 +47,7 @@
     printf("area km²: %f \n", area);
     printf("densidade populacional km²: %f \n", população / area);
     printf("pib per capital: %f \n", pib / população);
+    printf("Super poder: %.2f \n", população + area + pib + pibpercapital + densidadepopulacional + pontosturisticos);
 
     printf("digite seu estado: \n");
     scanf("%s", &estado);
@@ -79,10 +81,10 @@
     printf("area km²: %f \n", area);
     printf("densidade populacional km²: %f\n", população / area);
     printf("pib per capital: %f \n", pib / população);
+    printf("Super poder: %.2f \n", população + area + pib + pibpercapital + densidadepopulacional + pontosturisticos);
 
 
     return 0;
 
-    printf("novo comit\n");
 
 }
