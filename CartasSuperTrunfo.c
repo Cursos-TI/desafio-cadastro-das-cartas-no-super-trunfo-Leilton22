@@ -12,6 +12,7 @@
     float densidadepopulacional;
     float pibpercapital;
     float SuperPoder;
+    float superpoder1, superPoder2;
 
     printf("digite seu estado: \n");
     scanf("%s", &estado);
@@ -82,7 +83,13 @@
     printf("densidade populacional km²: %f\n", população / area);
     printf("pib per capital: %f \n", pib / população);
     printf("Super poder: %.2f \n", população + area + pib + pibpercapital + densidadepopulacional + pontosturisticos);
+    
 
+    if (superpoder1 > superPoder2) {
+        printf("Carta 1 Ceara Venceu\n");
+    } else {
+        print("carta 2 Bahia Venceu\n");
+    }
 
     return 0;
 
