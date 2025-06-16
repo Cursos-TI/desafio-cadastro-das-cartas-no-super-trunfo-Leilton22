@@ -90,8 +90,8 @@
     } else {
         print("carta 2 Bahia Venceu\n");
     }
-
+    
     return 0;
 
-
+       printf("novo commit\n");
 }
