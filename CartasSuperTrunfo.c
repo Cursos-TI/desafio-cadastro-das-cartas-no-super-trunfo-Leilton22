@@ -86,12 +86,16 @@
     
 
     if (superpoder1 > superPoder2) {
-        printf("Carta 1 Ceara Venceu\n");
+        printf("carta 1 - ceara venceu\n");
+       printf("população: %d \n", população1);
+    }else if (Superpoder1 < Superpoder2) {
+      printf("carta 2 - bahia venceu\n");
+      printf("população: %d \n", população2);
     } else {
-        print("carta 2 Bahia Venceu\n");
-    }
+      printf("huve um empate\n");
+    } 
     
     return 0;
 
-       printf("novo commit\n");
+
 }
