@@ -5,14 +5,16 @@
     char estado[50];
     char cidade[50];
     char codigo[50];
-    int população;
+    char TipoComparação;
+    int população1, população2;
     int pontosturisticos;
+    int Resultado;
     float pib;
     float area;
     float densidadepopulacional;
     float pibpercapital;
-    float SuperPoder;
-    float superpoder1, superPoder2;
+    float Superpoder1, Superpoder2;
+    
 
     printf("digite seu estado: \n");
     scanf("%s", &estado);
@@ -24,33 +26,35 @@
     scanf("%S", &codigo);
 
     printf("população: \n");
-    scanf("%d", &população);
+    scanf("%d", &população1);
 
     printf("pontosturisticos: \n");
+
     scanf("%d", &pontosturisticos);
 
     printf("pib: \n");
     scanf("%f", &pib);
 
-    printf("area km²: \n");
+    printf("area: \n");
     scanf("%f", &area);
 
-    (população/ area);
-    (pib / população);
+    (população1/ area);
+    (pib / população1);
+
 
     printf("carta 1! \n");
     printf("estado: %s \n", estado);
     printf("cidade: %s \n", cidade);
     printf("codigo: %s \n", codigo);
-    printf("populaçao: %d \n", população);
+    printf("populaçao: %d \n", população1);
     printf("pontos turisticos: %d \n", pontosturisticos);
-    printf("pib: %f \n", pib);
-    printf("area km²: %f \n", area);
-    printf("densidade populacional km²: %f \n", população / area);
-    printf("pib per capital: %f \n", pib / população);
-    printf("Super poder: %.2f \n", população + area + pib + pibpercapital + densidadepopulacional + pontosturisticos);
-
-    printf("digite seu estado: \n");
+    printf("pib: %.2f \n", pib / população1);
+    printf("area: %.2f \n", população1/ area);
+    printf("densidade populacional km²: %f \n", população1 / area);
+    printf("pib per capital: %.2f \n", pib / população1);
+    printf("Super poder 1: %.2f \n", população1 + area + pib + pibpercapital + pontosturisticos);
+    
+     printf("digite seu estado: \n");
     scanf("%s", &estado);
 
     printf("nome da cidade: \n");
@@ -60,43 +64,69 @@
     scanf("%S", &codigo);
 
     printf("população: \n");
-    scanf("%d", &população);
+    scanf("%d", &população2);
 
     printf("pontosturisticos: \n");
+
     scanf("%d", &pontosturisticos);
 
     printf("pib: \n");
     scanf("%f", &pib);
 
-    printf("area km²: \n");
+    printf("area: \n");
     scanf("%f", &area);
+
+    (população2/ area);
+    (pib / população2);
 
 
     printf("carta 2! \n");
     printf("estado: %s \n", estado);
     printf("cidade: %s \n", cidade);
     printf("codigo: %s \n", codigo);
-    printf("populaçao: %d \n", população);
+    printf("populaçao: %d \n", população2);
     printf("pontos turisticos: %d \n", pontosturisticos);
-    printf("pib: %f \n", pib);
-    printf("area km²: %f \n", area);
-    printf("densidade populacional km²: %f\n", população / area);
-    printf("pib per capital: %f \n", pib / população);
-    printf("Super poder: %.2f \n", população + area + pib + pibpercapital + densidadepopulacional + pontosturisticos);
+    printf("pib: %.2f \n", pib / população2);
+    printf("area: %.2f \n", população2 / area);
+    printf("densidade populacional km²: %f \n", população2 / area);
+    printf("pib per capital: %.2f \n", pib / população2);
+    printf("Super poder 2: %.2f \n", população2 + area + pib + pibpercapital + pontosturisticos);
     
+    
+    
+switch (TipoComparação)
+{
+case 1:
+  Resultado = população1 > população2 ? 1 : 0;
+  break;
+case 2:
+  Resultado = população1 < população2 ? 1 : 0;
+  break;
 
-    if (superpoder1 > superPoder2) {
-        printf("carta 1 - ceara venceu\n");
-       printf("população: %d \n", população1);
-    }else if (Superpoder1 < Superpoder2) {
-      printf("carta 2 - bahia venceu\n");
-      printf("população: %d \n", população2);
-    } else {
-      printf("huve um empate\n");
-    } 
-    
+default:
+  break;
+}
+
+
+  printf("A População  da carta 1 é: %d e o do carta 2 é: %d\n", população1, população2);
+
+  if (Resultado = população1 >= população2)
+ {
+  printf("Parabens carta 1 venceu!\n");
+ } else
+ {
+  printf("Parabens carta 2 venceu!\n");
+ }
+ 
+ 
+  
+
     return 0;
 
-    printf("Novocommit\n");
 
+
+
+
+
+   
 }
